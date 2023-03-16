@@ -1,19 +1,18 @@
 * {
   box-sizing: border-box;
 }
+
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: system-ui;
   font-weight: 550;
-  
 }
 
 #general {
   display: flex;
   justify-content: center;
- 
+  aspect-ratio: 6/12;
 }
 
 .cont {
@@ -21,10 +20,10 @@ h1 {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr);
   background-color: black;
-  
+  aspect-ratio: 6/12;
   max-height: 800px;
-  gap: 0.5rem;
   border: 2px solid black;
+  gap:12px;
 }
 
 .gris {
@@ -133,12 +132,14 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
-
+  #general {
+    aspect-ratio: 8/9;
+  }
 
   .contenedor {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    
+    aspect-ratio: 8/9;
   }
 
   .p1 {
@@ -219,12 +220,14 @@ h1 {
 }
 
 @media screen and (min-width: 900px) {
-
+  #general {
+    aspect-ratio: 11/7;
+  }
 
   .contenedor {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(7, 1fr);
-  
+    aspect-ratio: 11/7;
   }
 
   .p1 {
